@@ -1,0 +1,239 @@
+
+/*=============================================
+				UNIVERSAL
+=============================================*/
+html{
+	font-size: 62.5%;/*RESET PARA REMS 62.5= 10px de 16px*/
+	background:#ECECEC;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif; /*===FUENTES===*/
+}
+img{
+	max-width: 200%;
+}
+
+/*=============================================
+				GLOBAL
+=============================================*/
+
+.contenedor{
+	max-width: 120rem;/*===MAXIMO DE ANCHO===*/
+	margin: 0 auto 0 auto;/*===MARGEN DE LOS 4 LADOS===*/
+}
+
+.seccion{
+	margin-top: 2rem;
+	margin-right: 2rem; 
+}
+
+/*=============================================
+				HEADER
+=============================================*/
+
+.header-inicio{
+	background: url(../imagenes/fondo.png);/*===IMAGEN DE FONDO===*/
+	background-position: center center;/*===IMAGEN DESDE EL CENTRO===*/
+	background-size: cover;/*===TOMA EL ESPACIO DISPONIBLE SIN AFECTAR LA IMAGEN===*/
+	height: 100vh;/*===OCUPA EL 100% DEL LARGO===*/
+	min-height: 60rem;/*===SU TAMAÑO MINIMO SERA 600===*/	
+}
+
+.barra{
+	background: black;
+	padding: 2rem; /*===padding= ESPACIO HACIA DENTRO margin=SEPARACION HACIA AFUERA===*/ 
+}
+
+.contenido-header{
+
+	display: flex;
+	justify-content: space-between;/*===ALINEAR HORIZONTALMENTE flex-end=derecho flex-start=izquierdo center=centro 
+										space-around=centrado con margen space-evenly=misma cantidad de espacion entre todos
+										space-between=Uno izquierda y otro derecha===*/
+	align-items: center;/*===ALINEA VERTICALMENTE flex-end=abajo flex-start=arriba===*/									
+	padding-top: 2rem;/*===MRGEN SUPERIOR HACIA DENTRO===*/	
+}
+
+.navegacion a{
+	color:white; /*===color: rgb(255, 255, 255, .5); = COLOR CON TRANSPARENCIA===*/
+	text-decoration: none;/*===ELIMINA LAS LINEAS===*/
+	font-size: 1.8rem;/*===(1.8rem=18pixeles)===*/
+	margin-right: 2rem; /*MARGEN ENTRE TEXTOS*/
+}
+
+.navegacion a:last-of-type{/*===ELIMINA ESPACIO DEL ULTIMO ELEMENTO===*/
+	margin: 0;
+}
+
+.navegacion a:hover{/*===CAMBIA DE COLOR AL DAR CLIC===*/
+	color:orange;
+}
+
+/*=============================================
+				HEADER INFERIOR
+=============================================*/
+
+.alineacion{
+	height: 100%; /*===USA TODO EL ESPACIO PARA PODER POSICIONARLO ===*/
+	display: flex; /*===DIRECCIONAR CONTENIDO ===*/
+	flex-direction: column;/*===DIRECCIOES DEL CONTENIDO  row=iquierda a derecha row-reverse=derecha a izquierda
+								column=arriba hacia abajo===*/
+	justify-content:space-between;
+}
+
+.contenido-principal{
+	color:white;
+	text-align: center;
+}
+
+.contenido-principal h1{
+	font-size: 4rem;
+}
+
+.contenido-principal p{
+	font-size: 2rem;
+	line-height: 1;
+}
+
+/*.contenido-header h1{
+	
+	color:white;
+	padding-bottom: 3rem; /*ESPACIO INFERIOR
+	max-width: 70rem; /*ESPACIO DE LA CAJA
+	line-height: 2; /*SALTO DE LINEA
+}*/
+.boton{
+ font-weight: 300; /*ANCHO DE LETRA*/
+ text-decoration: none;
+ font-size: 2.5rem;
+ padding: 1rem 1rem; 
+ border-radius: 1rem;
+	
+}
+.boton-rojo{
+	color:white;
+	background: #FF5F4A;
+}
+
+.separacion{
+	margin: 10rem;
+}
+
+/*=============================================
+				 1 SECCION
+=============================================*/
+.mas-vistos h1{
+	color:black;
+	text-align: center;
+	font-size: 3rem;
+	text-transform: capitalize;
+}
+
+/*=============================================
+				TARJETAS
+=============================================*/
+
+.principales{
+	
+	display: flex;
+	justify-content: space-evenly;/*===ALINEAR HORIZONTALMENTE flex-end=derecho flex-start=izquierdo center=centro 
+										space-around=centrado con margen space-evenly=misma cantidad de espacion entre todos
+										space-between=Uno izquierda y otro derecha===*/	
+	margin-bottom: 2rem;																	
+}
+
+.contenedor-card{
+  background: white;
+  flex-basis: calc(33.3% - 8rem);/*===MISMA CANTIDAD DE ESPACIO PERO CON 8 PX DE SAPARACION===*/
+  border-radius: 10%;
+
+  -webkit-box-shadow: 4px 6px 14px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 6px 14px -5px rgba(0,0,0,0.75);
+  box-shadow: 4px 6px 14px -5px rgba(0,0,0,0.75);
+}
+
+.card{
+  color:black;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.card h1{
+	color:black;
+}
+
+.card p{
+
+	text-transform: capitalize; /*capitalize=MAYUSCULAS Y MINUSCULAS uppercase=MAYUSCULAS lowercase=MINUSCULAS*/
+	font-size: 1.5rem;
+	font-weight: 600; /*GROSOR DE LA LETRA*/
+}
+
+.imagencard{
+  display: inline-block;
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.imagencard img{
+  width: auto;
+  height: 100%;
+  margin-left: -5rem;
+}
+
+.iconos{
+	display: flex;
+}
+
+.iconos a{
+	display: flex;
+	flex:1;
+	text-decoration: none;
+}
+
+/*=============================================
+				PREMIUM
+=============================================*/
+
+.seccion-premium{
+	background: url(../imagenes/premium.png);
+	background-size: cover;
+	height: 35rem;
+	
+}
+
+.contenido-premium h2{
+	line-height: 2;
+	text-align: center;
+	font-size: 3rem;
+	color:white;
+}
+
+.contenido-premium ul{
+	font-size: 2rem;
+	color:white;
+	line-height: 1.5;
+}
+
+.contenido-boton{
+	padding-top: 6rem;
+	text-align: right;
+}
+
+.boton-premium{
+
+color:white;
+background: #FF5F4A;
+font-weight: 300; /*ANCHO DE LETRA*/
+text-decoration: none;
+font-size: 2.5rem;
+padding: 1rem 1rem; 
+border-radius: 1rem;
+
+}
+
+

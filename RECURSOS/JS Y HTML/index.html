@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cafecito</title>
+		<link rel="shortcut icon" href="imagenes/caficon.png">
+		<meta name="description" content="Blog sencillo de cafe">
+		<!--Prefetch (Para cargar paginas desde antes)-->
+		<link rel="prefetch" type="nosotros.html" as="document">
+
+		<!--Preload (Para cargar lo mas rapido posible)-->
+		<link rel="preload" href="css/normalize.css" as="style">
+		<link rel="stylesheet" href="css/normalize.css">
+
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&display=swap" crossorigin="crossorigin" as="font">
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&display=swap" rel="stylesheet">
+
+		<link rel="preload" href="css/estilos.css" as="style">
+		<link rel="stylesheet" href="css/estilos.css">
+
+	</head>
+	<body>
+
+	<header class="header">
+
+		<div class="contenedor">
+			<div class="barra">
+				<a class="logo" href="index.html">
+					<img  class="imagen_logo centrar-imagen no-padding" src="imagenes/logopngblanco.png" alt="imagen logo">
+				</a>
+					<nav class="navegacion">
+					<a href="index.html" class="navegacion__enlace">Inicio</a>
+					<a href="nosotros.html" class="navegacion__enlace">Nosotros</a>								
+					<a href="cursos.html" class="navegacion__enlace">Cursos</a>
+					<a href="contacto.html" class="navegacion__enlace">Contacto</a>
+					</nav>
+			</div>			
+		</div>
+
+
+		<div class="header__texto">
+			<h2 id="heading" class="no-margin">Blog de cafe consejos y recursos</h2>
+			<p>Aprende de los expertos con las mejores consejos y recetas</p>
+		</div>
+		
+	</header>
+
+	<div class="contenedor contenido-principal">
+		<main class="blog">
+			<h3>Nuestro Blog</h3>
+			<article class="entrada">
+
+				<div class="entrada_imagen">
+					<picture>
+						<source loading="lazy" srcset="imagenes/blog1.webp" type="image/webp">
+						<img loading="lazy" src="imagenes/blog1.jpg" alt="imagen blog">
+					</picture>					
+				</div>
+
+				<div class="entrada_contenido">
+					<h4 class="no-margin">Tipos de grano de cafe</h4>
+					<p>Lorem Ipsum ha sido el texto de relleno estándar de la industria desde el siglo XVI, cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras tipográficas. Ha sobrevivido no solo a cinco siglos, sino también al salto a la composición tipográfica electrónica, permaneciendo esencialmente sin cambios.
+					</p>
+					<a href="entrada1.html" class="boton boton-primario">Leer mas..</a>
+				</div>
+				
+			</article>
+
+			<article class="entrada">
+				<div class="entrada_imagen">
+					<picture>
+						<source loading="lazy" srcset="imagenes/blog2.webp" type="image/webp">
+						<img loading="lazy" src="imagenes/blog2.jpg" alt="imagen blog">
+					</picture>
+				</div>
+				<div class="entrada_contenido">
+					<h4 class="no-margin">3 Recetas deliciosas con cafe</h4>
+					<p>Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica.Ha sobrevivido no solo a cinco siglos, sino también al salto a la composición tipográfica electrónica, permaneciendo esencialmente sin cambios.
+					</p>
+					<a href="entrada2.html" class="boton boton-primario">Leer mas..</a>
+				</div>
+				
+			</article>
+
+			<article class="entrada">
+				<div class="entrada_imagen">
+					<picture>
+						<source loading="lazy" srcset="imagenes/blog3.webp" type="image/webp">
+						<img loading="lazy" src="imagenes/blog3.jpg" alt="imagen blog">
+					</picture>
+				</div>
+				<div class="entrada_contenido">
+					<h4 class="no-margin">Beneficios del cafe</h4>
+					<p>Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde el siglo XVI, cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras tipográficas. Ha sobrevivido no solo a cinco siglos, sino también al salto a la composición tipográfica electrónica, permaneciendo esencialmente sin cambios.
+					</p>
+					<a href="entrada3.html" class="boton boton-primario">Leer mas..</a>
+				</div>
+				
+			</article>
+
+		</main>
+
+		<aside class="sidebar">
+			<h3>Nuesros cursos y talleres</h3>
+
+			<ul class="cursos no-padding">
+				<li class="widget-curso">
+					<h4 class="no-margin">Extraccion de Cafe</h4>
+					<p class="widget-curso-label">Precio:
+						<span class="widget-curso-info">Gratis</span>
+					</p>
+					<p class="widget-curso-label">Cupo:
+						<span class="widget-curso-info">20</span>
+					</p>
+					<a href="cursos.html" class="boton boton-secundario">Informacion del curso</a>
+				</li>
+			
+				<li class="widget-curso">
+					<h4 class="no-margin">Arte en el cafe</h4>
+					<p class="widget-curso-label">Precio:
+						<span class="widget-curso-info">$185</span>
+					</p>
+					<p class="widget-curso-label">Cupo:
+						<span class="widget-curso-info">34</span>
+					</p>
+					<a href="cursos.html" class="boton boton-secundario">Informacion del curso</a>
+				</li>
+			</ul>
+
+		</aside>
+		
+	</div>
+
+	<footer class="footer">
+		<div class="contenedor">
+			<div class="barra">
+				<a class="logo" href="index.html">
+					<img  class="imagen_logo centrar-imagen no-padding" src="imagenes/logopngblanco.png" alt="imagen logo">
+				</a>
+
+					<nav class="navegacion">
+					<a href="nosotros.html" class="navegacion__enlace">Nosotros</a>								
+					<a href="cursos.html" class="navegacion__enlace">Cursos</a>
+					<a href="contacto.html" class="navegacion__enlace">Contacto</a>
+					</nav>
+			</div>	
+			
+		</div>
+	</footer>
+
+		<script src="js/modernizr.js"></script>
+		<script src="js/scripts.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,47 @@
+
+:root {
+    /* Fuentes */
+    --fuente-principal: 'Montserrat', sans-serif;
+
+    /* Tamaño */
+    --delgada: 100;
+    --regular : 300;
+    --grande: 500;
+
+    /* Colores */
+    --cafe: #ee4b00;
+    --gris: #303030;
+    --gris-claro: #ececec;
+    --blanco: #ffffff;
+    --negro: #1a1a1a;
+    --rojo: #d83333;
+    --amarillo: #ffbb00;
+
+    /* separaciones */
+    --separacion: 5rem;     
+}
+
+.oscuro{
+    background: var(--gris);
+    color: var(--blanco);
+}
+
+.oscuro .tarjeta p{    
+    color: var(--blanco);
+}
+
+.oscuro .contenido-barbero{
+    color: var(--blanco);
+}
+
+.oscuro .tarjeta {
+    box-shadow: 0px 10px 8px rgba(3, 19, 23, 0.25) !important;
+}
+
+.oscuro .tarjeta-barbero{
+    box-shadow: 0px 10px 8px rgba(3, 19, 23, 0.25) !important;
+}
+
+.oscuro .contacto{
+    box-shadow: 0px 10px 8px rgba(3, 19, 23, 0.25) !important;
+}

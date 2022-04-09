@@ -1,0 +1,261 @@
+/*==================================
+Hoja de estilos
+====================================*/
+
+:root {
+    --ftitulo: 'Montserrat', sans-serif ;
+    --fparrafo: 'DM Sans', sans-serif;
+
+    --cafe: #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fparrafo);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** Globales **/
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--ftitulo);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 2.8rem;
+}
+h4 {
+    font-size: 2.4rem;
+}
+img {
+    max-width: 100%;
+}
+
+p{
+    font-size: 2rem;
+}
+/** Utilidades **/
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+.centrar-imagen{
+    display:block;
+    margin:auto;
+}
+
+/** Header **/
+.webp .header {
+    background-image: url(../imagenes/banner.webp);
+}
+.no-webp .header {
+    background-image: url(../imagenes/banner.jpg);
+}
+.header {
+    background-image: url(../imagenes/banner.webp);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header__texto {
+   text-align: center;
+   color: var(--blanco);
+   margin-top: 5rem;
+}
+
+.imagen_logo{
+    height: 10rem;
+}
+
+ .navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+} 
+
+.entrada{
+    border-bottom: 1.5px solid var(--gris);
+    margin-bottom: 3rem;
+}  
+
+.entrada:last-of-type{
+    border:none;
+    margin-bottom: 0;
+}
+
+.boton{
+    display: block;
+    font-family: var(--ftitulo);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    border:none;
+    border-radius: 5px;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+.boton-primario{
+    background-color: var(--negro);
+}
+
+.boton-secundario{
+    background-color: var(--cafe);
+}
+
+.cursos{
+    list-style: none;
+    font-weight: normal;
+}
+
+.widget-curso{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.widget-curso:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.widget-curso-label,
+.curso-label{
+    font-weight: bold;
+}
+
+.widget-curso-info,
+.curso-info{
+    font-weight: normal;
+}
+
+.footer{
+    background-color: var(--negro);
+    padding: 5rem 0;
+    margin-top: 4rem;
+}
+
+.sidebar h3{
+    text-align: center;
+}
+
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+.curso:last-of-type{
+    border:none;
+}
+.contacto-bg{
+    background-image: url(../imagenes/contacto.jpg);
+    height: 50rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario{
+    background-color: var(--blanco);
+    margin: -30rem auto 0 auto;
+    width: 95%;
+    padding: 8rem;
+}
+
+.campo-label{
+    flex: 0 0 10rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.campo-input{
+    flex:1;
+    border: 1px solid var(--gris);
+    height: 4rem;
+}
+.campo-txtarea{
+    height: 20rem;
+}
+.formulario{
+    box-shadow: 2px 2px 15px #999;
+}
+
+@media (min-width: 768px) {
+
+    .header__texto{
+        margin-top: 15rem;
+    }
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navegacion{
+        display: flex;
+        gap:2rem;
+        justify-content: center;
+    }
+
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+
+    .boton{
+        display: inline-block;
+    }
+
+    .sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+    }
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 3rem;
+    }
+
+    .contenedor-entrada{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .campo{
+    display: flex;
+    margin-bottom: 2rem;
+    }
+}

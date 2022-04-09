@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+    <link href="recursos/fonts/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="recursos/css/estilos.css">
+    <link rel="stylesheet" href="recursos/css/night.css">
+    <link rel="stylesheet" href="recursos/css/normalize.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="index.html">
+                    <img src="recursos/img/logo.svg" alt="Imagen Logotipo">
+                </a> 
+                <div class="menu-mobile">
+                    <p>Menu</p>
+                    <i class="fas fa-bars fa-3x"></i>
+                </div>
+                <div class="nav-orientacion">                                  
+                    <nav class="navegacion">
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="propiedades.html">Propiedades</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contacto.html">Contacto</a>
+                    </nav>
+                    <div class="icono-luna">                        
+                        <i class="moon far fa-moon fa-2x"></i>
+                    </div> 
+                </div>
+            </div>           
+        </div>
+    </header>
+
+    <section class="seccion-contacto ">
+            <div class="separacion"></div>
+    </section>
+
+    <main class="contenedor seccion">
+        
+        <h1>Contacto</h1>
+
+        <form class="formulario">
+            <fieldset>
+                <legend>Informacion Personal</legend>
+
+                <label for="nombre">Nombre</label>
+                <input  class="espacio" type="text" placeholder="Nombre completo" id="nombre">
+
+                <label for="email">E-mail</label>
+                <input class="espacio" type="email" placeholder="E-mail" id="email">
+
+                <label for="numero">Cel</label>
+                <input class="espacio" type="tel" placeholder="Numero de celular" id="numero">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="espacio" id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacion de Propiedad</legend>
+
+                <label for="opciones">Vender o Comprar</label>
+                <select id="opciones">
+                    <option value="" disabled selected>--Selecciona--</option>
+                    <option value="comprar">Comprar</option>
+                    <option value="vender">Vender</option>
+                </select>
+
+                <label for="presupuesto">Precio o Presupuesto</label>
+                <input type="number" placeholder="Anote la cantidad" id="presupuesto">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Opciones de Contacto</legend>
+
+                <p>Quiero ser contactado por:</p>
+                <div class="form-contacto">
+
+                    <label for="contactar-telefono">Telefono</label>
+                    <input name="contacto" type="radio" value="telefono" id="contactar-telefono">
+
+                    <label for="contactar-email">E-mail</label>
+                    <input name="contacto" type="radio" value="email" id="contactar-email">
+                </div>
+
+                <p>Si quiere ser contactado por telefono seleccione:</p>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" min="08:00" max="18:00">
+            </fieldset>  
+            
+            <input type="submit" value="Enviar" class="boton boton-color">
+        </form>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion mostrar">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="propiedades.html">Propiedades</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav> 
+        </div>
+        <p class="copyright">Todos los derechos reservados &copy;</p>
+    </footer>
+
+    <script src="recursos/js/app.js"></script>
+    <script src="recursos/js/modernizr.js"></script>
+</body>
+</html>

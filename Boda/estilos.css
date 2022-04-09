@@ -1,0 +1,345 @@
+/*==================================
+URL
+====================================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@200;400;600&display=swap&family=Be+Vietnam+Pro:wght@800&display=swap');
+
+
+/*==================================
+Variables
+====================================*/
+
+:root {
+    /* Fuentes */
+    --fuente-titulo:  'Montserrat', sans-serif;
+    --funte-titulo-bold: 'Be Vietnam Pro', sans-serif;
+    --fuente-principal:  'Outfit', sans-serif;
+
+    /* Tamaño */
+    --delgada: 200;
+    --regular : 400;
+    --grande: 600;
+
+    /* Colores */
+    --azul: #2448da;
+    --azul-fuerte: #1f3e72;
+    --celeste: #e7f3fc;
+    --gris: #697383;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --amarillo: #ffbb00;
+    --morado: #dfcae0;
+    
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background: rgb(253,238,255);
+    background: linear-gradient(90deg, rgba(253,238,255,1) 7%, rgba(249,240,250,1) 88%);    
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuente-titulo);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+img, picture, video{
+    width: 100%;
+    display: block;
+}
+
+/** Utilidades **/
+
+.contenedor{
+    width: min(80%, 120rem);
+    margin: 0 auto;
+}
+
+.seccion {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+/*==================================
+HEADER
+====================================*/
+.header{
+    background: rgb(244,235,245);
+    background: linear-gradient(90deg, rgba(253,238,255,1) 25%, rgba(218,251,255,1) 75%);
+}
+
+.logo{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.navegacion a{
+    color: var(--azul-fuerte);
+}
+
+.portada img{
+    height: 50rem;
+    object-fit: cover;
+}
+
+/*==================================
+DEDICATORIA
+====================================*/
+
+
+
+.frase{
+    margin-top: 5rem;
+}
+
+.frase h2{
+    font-size: 3rem;
+    font-family: var(--fuente-principal);
+    font-weight: var(--delgada);
+}
+
+.frase p{
+    text-align: center;
+}
+
+/*==================================
+TABLA
+====================================*/
+
+table{
+    margin: 0 auto;
+}
+
+tr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.contenido-tabla{
+    margin-top: 4rem;
+}
+
+.iconos{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.iconos i{
+    font-size: 2.5rem;
+}
+
+
+/*==================================
+GALERIA
+====================================*/
+
+
+.imagenes img{
+    margin-top: 2rem;
+    border-radius: 1rem;
+    transition-duration: 0.5s;
+    box-shadow: 0px 10px 8px rgba(3, 19, 23, 0.25);
+}
+
+.imagenes img:hover{
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transform: translateY(-1rem);
+}
+
+/*==================================
+HOSPEDAJE
+====================================*/
+
+
+.cnt-hotel img{
+    height: 30rem;
+    object-fit: cover;
+ }
+
+ iframe{
+    width:100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+ /*==================================
+FECHA
+====================================*/
+.fecha{
+    background-color: var(--negro);
+}
+
+.cnt-fecha{
+    text-align: center;
+    padding: 2rem;
+    color: var(--blanco);
+}
+
+.cnt-fecha p{
+    font-size: 3rem;
+}
+
+ /*==================================
+TARJETAS
+====================================*/
+
+.tarjeta img{
+    height: 35rem;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.tarjeta{
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: var(--morado);
+    transition-duration: 0.5s;
+    box-shadow: 0px 10px 8px rgba(3, 19, 23, 0.25);
+}
+
+.tarjeta p{
+    text-align: center;
+}
+
+ /*==================================
+FOOTER
+====================================*/
+.footer{
+    background: rgb(244,235,245);
+    background: linear-gradient(90deg, rgb(253,238,255,1) 25%, rgba(218,251,255,1) 75%);
+    margin-bottom: 0;
+}
+
+.copyright{
+    text-align: center;
+    color: var(--azul-fuerte);
+    margin-bottom: 0;
+}
+
+ /*==================================
+RESPONSIVE
+====================================*/
+
+@media (min-width: 769px) {
+
+    .logo{
+        width: 10%;
+        margin: 0%;
+    }
+
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navegacion{
+        display: flex;
+        flex-direction: initial;
+        gap: 2rem;
+    }
+
+
+    .cnt-dedicatoria{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    td{
+        padding-left: 20rem;
+        padding-right: 25rem;
+    }
+
+    tr{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+
+    .imagenes{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 4rem;
+    }
+
+
+    .cnt-hotel{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .cnt-hotel img{
+        height: 55rem;
+        object-fit: cover;
+     }
+    
+     iframe{
+        width:100%;
+    }
+
+    .cnt-fecha{
+        text-align: center;
+        padding: 20rem;
+        color: var(--blanco);
+    }
+
+    .tarjetas{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 4rem;
+        padding: 5rem;
+    }
+
+    iframe{
+        width:600px; 
+        height:450px;
+    }
+}

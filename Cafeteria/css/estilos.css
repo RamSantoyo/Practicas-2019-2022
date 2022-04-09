@@ -1,0 +1,604 @@
+/*==================================
+URL
+====================================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@200;400;600&display=swap');
+
+
+/*==================================
+Variables
+====================================*/
+
+:root {
+    /* Fuentes */
+    --fuente-titulo:  'Montserrat', sans-serif;
+    --fuente-principal:  'Outfit', sans-serif;
+
+    /* Tamaño */
+    --delgada: 200;
+    --regular : 400;
+    --grande: 600;
+
+    /* Colores */
+    --cafe: #a14f25;
+    --gris: #4e4e4e;
+    --gris-claro: #bbbbbb;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --rojo: #d83333;
+
+    /* separaciones */
+    --separacion: 5rem;
+    --separacion-top: 8rem;
+    --separacion-titulo: 3rem;     
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 1.5rem;
+    line-height: 1.5;    
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuente-titulo);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+img, picture, video{
+    width: 100%;
+    display: block;
+}
+
+/** Utilidades **/
+
+.contenedor{
+    width: min(85%, 120rem);
+    margin: 0 auto;
+}
+
+.seccion {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.separacion{
+    margin: var(--separacion);
+}
+
+.separacion-superior{
+    margin-top: var(--separacion-top);
+}
+
+.separacion-inferior{
+    margin-bottom: var(--separacion-top);
+}
+
+.espacio{
+    padding: var(--separacion);
+}
+
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+.bordes-img img{
+    border-radius: 1rem;
+}
+
+.icono-rojo{
+    color: var(--rojo);
+}
+
+.boton{
+    cursor: pointer;
+}
+
+
+/*==================================
+Seccion 1
+====================================*/
+
+.header {
+    background-image: url(../recursos/portada.webp);
+    background-color: rgb(60, 60, 60);
+    background-blend-mode: soft-light;
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.barra{
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.logo img{
+    width: 15rem;
+}
+
+.navegacion{
+    display: flex;
+    gap: 3rem;
+}
+
+.navegacion__enlace{
+    color: var(--blanco);
+    font-size: 2.5rem;
+}
+.navegacion__enlace:hover{
+    color: var(--rojo);
+}
+
+.contenido-header h1{
+    color: var(--blanco);
+    font-family: var(--fuente-principal);
+    font-weight: var(--regular);
+    font-style: oblique;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.contenido-header img{
+    width: 10rem;
+    margin: 0 auto;
+}
+
+/*==================================
+Seccion 2
+====================================*/
+
+.sobre-nosotros{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.descripcion-nosotros{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.contenedor-imagen{
+    position: relative;
+}
+
+.contenedor-imagen::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 100%);
+    border-radius: 1rem;
+}
+
+/*==================================
+Seccion 3
+====================================*/
+
+.contenedor-imagen-bebida{
+
+    background-image: url(../recursos/cafes-seccion.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 0.5rem;
+
+}
+
+/*==================================
+    Seccion 4
+====================================*/
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.contenedor-menu{
+    text-align: center;
+}
+
+.titulo-tabla{
+    font-size: 2.5rem;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 2px solid var(--gris-claro);
+}
+
+.contenido-tabla h2{
+    font-size: 1.8rem;
+    font-family: var(--fuente-principal);
+    font-weight: var(--grande);
+    margin-top: 4rem;
+    margin-bottom: 0;
+}
+
+.contenido-tabla p{
+    font-size: 1.8rem;
+    color: var(--gris);
+}
+
+/*==================================
+    Seccion 5
+====================================*/
+.seccion-slogan{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.contenedor-video video{
+    border-radius: 1rem;
+}
+
+/*==================================
+Seccion 6
+====================================*/
+
+.contenedor-imagen-comida{
+    background-image: url(../recursos/comida-seccion-dos.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    border-radius: 0.5rem;
+
+}
+
+/*==================================
+Seccion 7
+====================================*/
+
+.contenedor-establecimiento{
+    position: relative;
+}
+
+.contenedor-establecimiento::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(45deg, rgba(0,0,0,0.5998774509803921) 0%, rgba(0,0,0,0) 100%);
+}
+
+.contenedor-establecimiento p{
+    position: absolute;
+    color: var(--blanco);
+    font-size: 3rem;
+    margin-left: 5rem;
+}
+
+
+/*==================================
+Seccion 8
+====================================*/
+
+.box{
+    display: block;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+label{
+    font-size: 1.5rem;
+}
+
+textarea{
+    height: 15rem;
+}
+
+.boton{
+    background-color: var(--rojo);
+    color: var(--blanco);
+    font-size: 2rem;
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+/*==================================
+Seccion footer
+====================================*/
+
+.footer{
+    background-color: var(--negro);    
+}
+
+.redes-footer img{
+    width: 20%;
+}
+
+.redes-footer p{
+    color: var(--blanco);
+    width: 80%;
+}
+
+.copyright{
+    color: var(--blanco);
+    text-align: center;
+}
+
+.fa-facebook{
+    color: #3b5998;
+    background-color: var(--blanco);
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.fa-twitter{
+    color: #00acee;
+    background-color: var(--blanco);
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.fa-youtube{
+    color: #c4302b;
+    background-color: var(--blanco);
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.lista{
+    display: flex;
+    gap: 3rem;
+    padding-left: 0;
+}
+
+.contenido-footer{
+    color: var(--blanco);
+}
+
+.formulario-correo{
+    padding-top: 4rem;
+    padding-left: 4rem;
+}
+/*==================================
+Puntos de quiebre
+====================================*/
+
+/*PANTALLA GRANDE*/
+
+@media (min-width: 769px) {
+
+    /*==================================
+    Seccion 1
+    ====================================*/
+
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+
+    .contenido-header{
+        padding: 1rem;
+        width: 60%;
+        margin: 0 auto;   
+    }
+
+    /*==================================
+    Seccion 2
+    ====================================*/
+    
+    .contenedor-imagenes-4{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    .contenedor-imagenes-3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    /*==================================
+    Seccion 3
+    ====================================*/
+
+    .seccion-bebidas{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+
+    .contenedor-imagen-bebida{
+        height: 100%;
+    }
+
+    /*==================================
+    Seccion 5
+    ====================================*/
+    .slogan{
+        font-size: 5rem;
+        padding-top: 15rem;
+    }
+
+    /*==================================
+    Seccion 7
+    ====================================*/
+    .contenedor-establecimiento p{
+        font-size: 5rem;
+        margin-left: 10rem;
+        margin-top: 35rem;
+        width: 50%;
+    }
+
+    /*==================================
+    Seccion 8
+    ====================================*/
+
+    .seccion-contacto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /*==================================
+    Footer
+    ====================================*/
+    .contenedor-footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .contenido-footer{
+        display: flex;
+        gap: 1rem;
+    }
+
+}
+
+
+/*PANTALLA TABLET*/
+
+@media (min-width: 576px) {
+    
+    /*==================================
+    Seccion 1
+    ====================================*/
+
+    .logo img{
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    .contenido-header{
+        padding: 4rem;
+        margin: 0 auto;   
+    }
+
+    .contenido-header img{
+        width: 10rem;
+    }
+
+    .navegacion{
+        justify-content: space-evenly;
+    }
+
+}
+
+/*PANTALLA MOVIL*/
+
+@media (max-width: 575px) {
+
+    /*==================================
+    Seccion 1
+    ====================================*/
+
+    .logo img{
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    .contenido-header{
+        padding: 4rem;
+        margin: 0 auto;   
+    }
+
+    .contenido-header h1{
+        font-size: 2rem;
+    }
+
+    .contenido-header img{
+        width: 6rem;
+    }
+
+    /*==================================
+    Seccion 2
+    ====================================*/
+
+    .seccion-nosotros{
+        padding: 0;
+    }
+
+    .sobre-nosotros{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .contenedor-imagenes-4{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 2rem;
+    }
+
+    .contenedor-imagen{
+        margin-bottom: 1rem;
+    }
+
+    .descripcion-nosotros{
+        padding: 0;
+        text-align: justify;
+    }
+
+    /*==================================
+    Seccion 3
+    ====================================*/
+    .contenedor-imagen-bebida{
+        height: 30rem;
+    }
+
+
+    /*==================================
+    Seccion 4
+    ====================================*/
+
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    /*==================================
+    Seccion 8
+    ====================================*/
+
+    .google-maps iframe{
+        width: 100%;
+        height: 30%;
+    }
+
+}

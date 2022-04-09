@@ -1,0 +1,205 @@
+img{ width: 100%;}
+
+main {
+	background-color:#999;
+}
+
+footer {
+	background-color: #000;
+}
+
+
+.example-class {
+	color: #000;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/*SECCION 1*/
+
+.fondo{
+	background-color:#222222;
+}
+
+.cabecera{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	align-items: center;
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	text-align: center;
+	justify-content: center;
+	padding: 3rem;
+}
+
+.div-cabecera{
+	display: flex;
+}
+
+.cabecera p{
+	font-size: 3.5rem;
+	color: #ffffff;
+}
+
+.img-logo{
+	text-align: center;
+}
+
+.div-cabecera p{
+	width: 45%;
+	color: #22a2d3;
+	font-size: 2rem;
+}
+
+
+.boton_1{
+	margin-left: 2rem;
+    text-decoration: none;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #22a2d3;
+	font-size: 2rem;
+    border-radius: 15px;
+    border: 3px double #22a2d3;
+	height: 4rem;
+  }
+
+  .boton_1:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }
+
+  /*NAV*/
+
+  .navbar{
+	  background-color: #22a2d3;
+	  text-align: center;
+	  margin-bottom: 0;
+  }
+
+  ul {
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #22a2d3;
+	display: inline-block;
+    list-style-type: none;
+	
+  }
+  
+  li {
+	float: left;
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 1rem 2rem 1rem 1rem;
+	text-decoration: none;
+	font-size: 2rem;
+  }
+  
+  li a:hover {
+	background-color: #1b6d8d;
+	text-decoration: none;
+	color: #ffffff;
+  }
+
+  /*CONTENEDOR DE IMAGENES*/
+
+  .contenedor-img{
+	background-color: #222222;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	column-gap: 1rem;
+	padding: 10rem;
+  }
+
+  	.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;		
+	}
+
+	.centrado{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.titulo-card{
+		font-size: 5rem;
+		color: #ffffff;
+	}
+
+	.txt-azul{
+		font-size: 1.4rem;
+		font-weight: 600;
+		color: #22a2d3;;
+	}
+/*SECCION INFORMATIVA*/
+
+.centrado h3{
+	color: #ffffff;
+	font-size: 3rem;
+}
+
+.subtitle{
+	font-size: 4rem;
+}
+
+.parrafo{
+	font-size: 2rem;
+	color: #ffffff;
+}
+
+/*MARCAS*/
+
+.marcas{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr;
+	column-gap: 2rem;
+	padding: 4rem 9rem 4rem 9rem;
+}
+
+
+/*FOOTER*/
+.footer{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	column-gap: 2rem;
+	padding: 4rem;
+	background-color: #222222;
+	justify-items: center;
+}
+
+.txt-footer{
+	color: #ffffff;
+	font-size: 1.5rem;
+	width: 70%;
+}
+
+.horizontal{
+	display: flex;
+	justify-content: space-between;
+}
+
+.parrafo-footer{
+	margin-top: 8rem;
+}
+
+.section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+
+
+  

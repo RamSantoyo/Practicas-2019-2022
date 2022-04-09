@@ -1,0 +1,852 @@
+/*==================================
+URL
+====================================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+
+
+/*==================================
+Variables
+====================================*/
+
+:root {
+    /* Fuentes */
+    --fuente-principal: 'Montserrat', sans-serif;
+
+    /* Tamaño */
+    --delgada: 100;
+    --regular : 300;
+    --grande: 500;
+
+    /* Colores */
+    --cafe: #ee4b00;
+    --gris: #4e4e4e;
+    --gris-claro: #ececec;
+    --blanco: #ffffff;
+    --negro: #1a1a1a;
+    --rojo: #d83333;
+    --amarillo: #ffbb00;
+
+    /* separaciones */
+    --separacion: 5rem;     
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background-color: var(--gris-claro);    
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuente-principal);
+    text-transform: uppercase;
+    font-weight:var(--grande);
+    text-align: center;    
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none !important;
+    font-size: 2rem;
+}
+
+img, picture, video{
+    width: 100%;
+    display: block;
+}
+
+li {
+    list-style:none;
+}
+
+/** Utilidades **/
+
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+.seccion {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.espacio{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.bordes-img img{
+    border-radius: 1rem;
+}
+
+/*==================================
+Navegacion
+====================================*/
+
+.header{
+    background-color: var(--negro);
+}
+
+.navegacion li:last-of-type{
+    margin-right: 0;
+}
+
+.navegacion ul{
+    padding-left: 0;
+}
+
+.navegacion__enlace{
+    color: var(--blanco);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.navegacion__enlace:hover{
+    transition-duration: 0.4s;
+    color: var(--negro);
+    background-color: var(--blanco);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.nav-ul li ul {
+    display:none;    
+}
+
+.nav-ul li ul li a{
+    color: var(--negro);
+    display: block;
+    width: 100%;       
+}
+
+.nav-ul li ul li a:hover{
+    color: var(--blanco);
+    background-color: var(--negro);       
+}
+
+.nav-ul li:hover > ul {
+    display:block;
+    background-color: var(--blanco);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.moon{
+    color: var(--blanco);
+}
+
+.moon:hover{
+    cursor: pointer;
+}
+
+/*==================================
+        Slider
+====================================*/
+
+.imagenes-slider{
+    position: relative;
+}
+.imagenes-slider::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 100%);
+    border-radius: 1rem;
+}
+
+.boton {
+    background-color: var(--blanco);
+    color: var(--negro);
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.boton:hover {
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/*==================================
+            Cabecera
+====================================*/
+
+.cabecera{
+    position: relative;
+    display: inline-block;
+    margin-top: 12rem;
+}
+
+.contenido-cabecera{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+.contenido-cabecera h1{
+    font-size: 4rem;
+    color: var(--blanco);
+}
+
+/*==================================
+Servicios
+====================================*/
+.servicios img{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.servicios h2{
+    font-size: 4rem;
+}
+
+.contenedor-tarjetas{
+    display: grid;    
+    grid-template-columns: repeat(2, 3fr);
+    gap: 10rem;
+    padding-right: 15rem;
+    padding-left: 15rem;
+}
+
+.tarjeta{
+    border-radius: 2rem;
+    box-shadow: 0px 10px 40px rgba(3, 19, 23, 0.25);
+}
+
+.enlace-tarjeta{
+    transition-duration: 0.5s;
+}
+
+.enlace-tarjeta:hover{
+    transition-duration: 0.5s;
+    transform: translateY(-2rem);
+}
+
+.tarjeta img{
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.tarjeta h2{
+    font-size: 3rem;
+    padding: 1rem;
+    color: var(--blanco);
+    background-color: var(--negro);
+}
+
+.tarjeta p{    
+    padding: 1rem 3rem 2rem 3rem;
+    text-align: justify;
+    color: var(--negro);
+}
+
+/*==================================
+        Barberos
+====================================*/
+.barberos img{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.barberos h2{
+    font-size: 4rem;
+}
+
+.contenedor-barberos{
+    display: grid;    
+    grid-template-columns: repeat(2, 2fr);
+    gap: 8rem;
+}
+
+.tarjeta-barbero{
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.tarjeta-barbero img{
+    width: 70%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.tarjeta-barbero{
+    border-radius: 2rem;
+    box-shadow: 0px 10px 40px rgba(3, 19, 23, 0.25);
+}
+
+.contenido-barbero{
+    text-align: left;
+    padding-top: 4rem;
+    color: var(--negro);
+}
+
+/*==================================
+GALERIA
+====================================*/
+.title-galery h2{
+    font-size: 3rem;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 8rem;
+}
+
+.galeria img{
+    border-radius: 1rem;
+    transition-duration: 0.5s;
+    box-shadow: 0px 10px 8px rgba(3, 19, 23, 0.25);
+}
+
+.galeria img:hover{
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transform: translateY(-2rem);
+}
+
+.overly{
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+
+    background-color: rgb(0 0 0 /.8);
+}
+
+.fa-circle-xmark{
+    color: var(--blanco);
+    transition-duration: 0.5s;
+}
+
+.fa-circle-xmark:hover{
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transform: translateY(-1rem);
+}
+
+picture{
+    display: block;
+    max-width: 80rem;    
+}
+
+.img-overly{
+    border-radius: 2rem;
+}
+
+.scroll{
+    overflow: hidden;
+}
+
+/*==================================
+        Contacto
+====================================*/
+.contact label, input, textarea{
+    width: 100%;
+    height: 4rem;
+    display: block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+textarea{
+    height: 20rem;
+}
+
+.contacto label{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contacto{
+    font-size: 2rem;
+    padding: 5rem;
+    border-radius: 2rem;
+    box-shadow: 0px 10px 40px rgba(3, 19, 23, 0.25);
+}
+
+.cbx {
+    position: relative;
+    top: 1px;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #c8ccd4;
+    border-radius: 3px;
+    transition: background 0.1s ease;
+    cursor: pointer;
+    display: block;
+   }
+   
+   .cbx:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    width: 7px;
+    height: 14px;
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: all 0.3s ease;
+    transition-delay: 0.15s;
+   }
+   
+   .lbl {
+    margin-left: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+   }
+   
+   #cbx:checked ~ .cbx {
+    border-color: transparent;
+    background: #6871f1;
+    animation: jelly 0.6s ease;
+   }
+   
+   #cbx:checked ~ .cbx:after {
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+   }
+   
+   .cntr {
+    position: relative;
+   }
+   
+   @keyframes jelly {
+    from {
+     transform: scale(1, 1);
+    }
+   
+    30% {
+     transform: scale(1.25, 0.75);
+    }
+   
+    40% {
+     transform: scale(0.75, 1.25);
+    }
+   
+    50% {
+     transform: scale(1.15, 0.85);
+    }
+   
+    65% {
+     transform: scale(0.95, 1.05);
+    }
+   
+    75% {
+     transform: scale(1.05, 0.95);
+    }
+   
+    to {
+     transform: scale(1, 1);
+    }
+   }
+   
+   .hidden-xs-up {
+    display: none!important;
+   }
+
+   #boton2{
+    border-radius: 0.5rem;   
+    color: var(--blanco);
+    background-color: var(--negro);
+    height: 5rem;       
+   }
+   
+   .titulo-contact h2{
+     font-size: 3rem;  
+   }
+/*==================================
+Slogan
+====================================*/
+.slogan img{
+    width: 35%;
+    margin: 0 auto;
+}
+
+.contenido-slogan p{
+    margin: 0 auto;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.contenido-slogan img{
+    margin-top: 3rem;
+    width: 15%;
+}
+
+/*==================================
+Horarios
+====================================*/
+.imagen-horarios{
+    background-image: url(../recursos/imagen3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+}
+
+.imagen-horarios{
+    color: var(--blanco);
+    text-align: center;
+}
+
+.imagen-horarios p{
+    margin-bottom: 2rem;
+}
+
+/*==================================
+Formulario
+====================================*/
+
+.suscripcion{
+    padding: 5rem;
+    box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 1rem;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.suscripcion h1{
+    font-size: 3rem;
+}
+
+.suscripcion p{
+    text-align: center;
+}
+
+.formulario{
+    font-size: 2rem;
+}
+
+#email{    
+    height: 5rem;
+    border: 1px solid var(--gris);
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.div-form label{
+    text-align: center;
+}
+
+.boton-formulario{    
+    color: var(--negro);
+    background-color: var(--amarillo);
+    font-weight: var(--grande);
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: block;
+    width: 100%;    
+}
+
+.boton-formulario:hover{    
+    color: var(--blanco);
+    background-color: var(--gris);   
+}
+
+/*==================================
+Footer
+====================================*/
+footer{
+    background-color: var(--negro);    
+    color: var(--blanco);    
+}
+
+.footer{
+    display: grid;    
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 5rem;    
+}
+
+.footer-1 img{
+    width: 80%;
+}
+
+.footer-2 h2{
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.nav-footer a{
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+.contenedor-ul{
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-left: 0;
+}
+
+.footer-3 h2{
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.nav-footer i{
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+
+.nav-footer{
+    padding-left: 0;
+}
+
+.footer-4 h2{
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.footer-4 a{
+    color: var(--blanco);
+}
+
+.copyright{
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+}
+
+/*==================================
+Puntos de quiebre
+====================================*/
+
+/*PANTALLA GRANDE*/
+
+@media (min-width: 769px) {
+
+    #main-header{
+        width: 100%;
+        top: 0;
+        position: fixed;
+    }
+
+    .logo img{
+        width: 30%;
+    }
+
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navegacion ul{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .nav-ul li ul {
+        position:absolute;    
+    }
+    
+    .nav-ul li ul li {
+        position:relative;       
+    }
+
+    /*==================================
+        Slider
+    ====================================*/
+
+    #demo{
+        margin-top: 12rem;
+    }
+
+    .carousel-caption{
+        margin-bottom: 15rem;
+    }
+
+    .carousel-caption p{
+        margin-bottom: 2rem;
+    }
+    
+    /*==================================
+    Slogan
+    ====================================*/
+
+    .contenido-slogan p{
+        margin: 0 auto;
+        padding-top: 2rem;
+        width: 50%;
+        text-align: center;
+    }
+
+    /*==================================
+    Suscripcion
+    ====================================*/
+
+    .div-form{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+        align-items: center;
+    }
+
+    #email{    
+        height: 5rem;
+        border: 1px solid var(--gris);
+        border-radius: 0.5rem;
+        width: 100%;
+        margin-top: 0;
+    }
+    
+}
+
+/*Tablet*/
+@media (max-width:1180px) and (min-width:820px){
+
+    #demo{
+        margin-top: 8rem;
+    }
+
+    .carousel-caption{
+        margin-bottom: 8rem;
+    }
+
+    .header-contenedor{
+        display: -webkit-flex;
+        -webkit-flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width:1024px) and (min-width:768px){
+
+    .header-contenedor{
+        display: -webkit-flex;
+        -webkit-flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .navegacion{
+        text-align: center;
+    }
+
+    .carousel-caption{
+        margin-bottom: 5rem;
+    }
+}
+
+/*Pantalla Movil*/
+@media (max-width: 575px) {
+
+    .navegacion{
+        text-align: center;
+    }
+
+    /*==================================
+        Slider
+    ====================================*/
+
+    .header-contenedor{
+        display: -webkit-flex;
+        -webkit-flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer{
+        display: grid;    
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        padding: 5rem;    
+    }
+
+    .footer-1 img{
+        margin: 0 auto;
+    }
+
+    .imagenes-slider img {
+        width: 200% !important;
+    }
+
+    .carousel-caption{
+        top: 8rem !important;
+    }
+
+    .cabecera{
+        margin-top: 0;
+    }
+
+    .contenedor-tarjetas{
+        display: grid;    
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5rem;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .contenedor-barberos{
+        display: grid;    
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5rem;
+    }
+
+    .galeria{
+        display: grid;    
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5rem;
+    }
+
+}
+

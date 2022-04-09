@@ -1,0 +1,75 @@
+/*==================================
+	Hoja de estilos
+====================================*/
+
+/*==================================
+	Declarar variables globales
+====================================*/
+:root {
+    --ftitulo: 'Montserrat', sans-serif ;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+.usarvariables{
+	font-family: var(--ftitulo);
+	color: var(--blanco);
+}
+
+/*==================================
+			Espacios
+====================================*/
+.espacios{
+	align-content: center;
+    padding: 5rem 5rem 5rem 5rem; /*(Margen hacia adentro)arriba, derecha, abajo, izquierda*/
+    padding: 5rem; /*abreviado*/
+
+    margin-top: 10rem; /*(Margen hacia afuera)arriba, abajo, izquierda, derecha*/
+    margin-bottom: 10rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+    margin: 10px 20px;/*margen vertical y horizontal*/
+
+    margin: 0 auto;/*margen vertical y automatico para centrar*/
+
+    margin: 10rem; /*abreviado*/
+
+    border: 1px solid red;/*tamaño, estilo, color*/
+
+}
+
+/*
+			PUNTOS DE QUIEBRE
+*/
+
+/*=============================================
+ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+=============================================*/
+@media (min-width:1200px){
+
+}
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+}
+
+/*=============================================
+ESCRITORIO PEQUEÃ‘O O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+
+}
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width:767px){
+
+}

@@ -1,0 +1,87 @@
+/*==================================
+URL
+====================================*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap');
+
+
+/*==================================
+Variables
+====================================*/
+:root {
+    /* Fuentes */
+    --fuente-principal:  'Fredoka', sans-serif;
+
+    /* Tamaño */
+    --delgada: 200;
+    --regular : 400;
+
+    /* Colores */    
+    --azul-fuerte: #1f3e72;
+    --celeste: #e7f3fc;
+    --gris: #697383;
+    --blanco: #ffffff;
+    --rosa: #ff73b9;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 1rem;
+    line-height: 1;    
+}
+
+img{
+    width: 100%;
+}
+
+h1, h3{    
+    text-align: center;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+.tarjeta{
+    margin: 10% 40%;
+    box-shadow: 0px 10px 40px rgba(3, 19, 23, 0.25);
+    border-radius: 1rem; 
+    padding: 2rem;
+}
+
+.img img{
+    border-radius: 100%;
+}
+
+.tarjeta .img{
+    border-radius:  100%;
+    padding: .5rem;
+}
+
+.contenido{
+    margin: 0 auto;
+}
+
+.tarjeta button{
+    padding: .5rem;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: .5rem;
+    color: var(--blanco);
+}
+
+.tarjeta button:hover{
+    cursor: pointer;
+}
+
+.male{
+    background-color: var(--azul-fuerte);
+}
+
+.female{
+    background-color: var(--rosa);
+}
